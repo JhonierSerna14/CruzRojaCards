@@ -1,0 +1,102 @@
+.search-container {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.search-bar {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+@media (min-width: 1024px) {
+  .search-container {
+    padding: 0 2.5rem;
+  }
+  
+  .search-bar {
+    padding: 2rem 2.5rem;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .search-container {
+    max-width: 1600px;
+    padding: 0 3rem;
+  }
+}
+
+.search-input-group {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #c41e3a;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1);
+}
+
+.search-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #666;
+  pointer-events: none;
+}
+
+.role-filter {
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #f8f9fa;
+  color: #333;
+  cursor: pointer;
+  min-width: 200px;
+  transition: all 0.3s ease;
+}
+
+.role-filter:focus {
+  outline: none;
+  border-color: #c41e3a;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1);
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .search-input-group {
+    min-width: auto;
+  }
+  
+  .role-filter {
+    min-width: auto;
+  }
+}
